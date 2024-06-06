@@ -12,21 +12,23 @@
     `$ sudo -H pip install git+https://github.com/gerardcanal/ds4drv`
 
 3. Add ds4drv rule
-.. code-block:: bash
-$ sudo wget https://raw.githubusercontent.com/chrippa/ds4drv/master/udev/50-ds4drv.rules -O /etc/udev/rules.d/50-ds4drv.rules
+
+    `sudo wget https://raw.githubusercontent.com/chrippa/ds4drv/master/udev/50-ds4drv.rules -O /etc/udev/rules.d/50-ds4drv.rules`
 
 4. Update udevadm
-.. code-block:: bash
-$ sudo udevadm control --reload-rules && sudo udevadm trigger
+
+    `sudo udevadm control --reload-rules && sudo udevadm trigger`
 
 5. Reboot
 
 #### Connect the DualShock controller
 1. Open bluetoothctl in a terminal
-$ bluetoothctl
+
+    `bluetoothctl`
 
 2. Enable scan
-$ scan on
+
+    `scan on`
 
 3. Press Share-button and PlayStation-button on DualShock controller for 5s
 
@@ -34,14 +36,14 @@ $ scan on
 
 4. Connect to Wireless Controller:
 
-$ connect "MAC"
+    `connect "MAC"`
 
 5. Trust Wireless Controller
 
-$ trust "MAC"
+    `trust "MAC"`
 
 6. Exit bluetoothctl
 
-$ exit
+    `exit`
 
 DualShock-Controller should now automatically connect to the MUR after a reboot by pressing the PlayStation-Button
