@@ -32,3 +32,6 @@
 [submodule "mir/mir_submodules/mir_robot"]
 	path = mir/mir_submodules/mir_robot
 	url = https://github.com/match-ROS/mir_robot
+[submodule "ds4ros"]
+	path = ds4ros
+	url = https://github.com/gerardcanal/ds4ros.git
