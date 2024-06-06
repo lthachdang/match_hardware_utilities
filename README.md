@@ -4,12 +4,12 @@
 
 #### Install driver ds4drv
 1. Install pip for python
-.. code-block:: bash
-$ sudo apt install pip
+    
+    `sudo apt install pip`
 
 2. Install Dualshock ds4drv driver to use ds4ros
-.. code-block:: bash
-$ sudo -H pip install git+https://github.com/gerardcanal/ds4drv
+
+    `$ sudo -H pip install git+https://github.com/gerardcanal/ds4drv`
 
 3. Add ds4drv rule
 .. code-block:: bash
