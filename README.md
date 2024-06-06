@@ -1,47 +1,47 @@
 # match Hardware Utilities
 
-## Installation of DualShock Support
+### Installation of DualShock Support
 
-### Install driver ds4drv
-Install pip for python
+#### Install driver ds4drv
+1. Install pip for python
 
-`sudo apt install pip`
+$ sudo apt install pip
 
-Install Dualshock ds4drv driver to use ds4ros
+2. Install Dualshock ds4drv driver to use ds4ros
 
-`sudo -H pip install git+https://github.com/gerardcanal/ds4drv`
+$ sudo -H pip install git+https://github.com/gerardcanal/ds4drv
 
-Add ds4drv rule
+3. Add ds4drv rule
 
-`sudo wget https://raw.githubusercontent.com/chrippa/ds4drv/master/udev/50-ds4drv.rules -O /etc/udev/rules.d/50-ds4drv.rules`
+$ sudo wget https://raw.githubusercontent.com/chrippa/ds4drv/master/udev/50-ds4drv.rules -O /etc/udev/rules.d/50-ds4drv.rules
 
-Update udevadm
+4. Update udevadm
 
-`sudo udevadm control --reload-rules && sudo udevadm trigger` 
+$ sudo udevadm control --reload-rules && sudo udevadm trigger
 
-Reboot
+5. Reboot
 
-### Connect the DualShock controller
-Open bluetoothctl in a terminal
-`bluetoothctl`
+#### Connect the DualShock controller
+1. Open bluetoothctl in a terminal
+$ bluetoothctl
 
-Enable scan
-`scan on`
+2. Enable scan
+$ scan on
 
-Press Share-button and PlayStation-button on DualShock controller for 5s
+3. Press Share-button and PlayStation-button on DualShock controller for 5s
 
 "Wireless Controller" with MAC-adress should pop up
 
-Connect to Wireless Controller
+4. Connect to Wireless Controller:
 
-`connect "MAC"`
+$ connect "MAC"
 
-Trust Wireless Controller
+5. Trust Wireless Controller
 
-`trust "MAC"`
+$ trust "MAC"
 
-Exit bluetoothctl
+6. Exit bluetoothctl
 
-`exit`
+$ exit
 
 DualShock-Controller should now automatically connect to the MUR after a reboot by pressing the PlayStation-Button
