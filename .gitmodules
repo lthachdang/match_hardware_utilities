@@ -35,12 +35,3 @@
 [submodule "ds4ros"]
 	path = ds4ros
 	url = https://github.com/gerardcanal/ds4ros.git
-[submodule "livox_lidar"]
-	path = livox_lidar
-	url = https://github.com/Livox-SDK/Livox-SDK2.git
-[submodule "Livox-SDK2"]
-	path = Livox-SDK2
-	url = https://github.com/Livox-SDK/Livox-SDK2.git
-[submodule "livox_ros_driver2"]
-	path = livox_ros_driver2
-	url = https://github.com/Livox-SDK/livox_ros_driver2.git
